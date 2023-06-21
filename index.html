@@ -134,24 +134,17 @@
                   </svg>
                 </button>
               </div>
-              <div class="flow-root mt-6">
-                <div class="-my-6 divide-y divide-neutral/10">
-                  <div class="py-6 space-y-2">
-                    <a href="#optimized-ielts-performance" class="block px-3
-                      py-2 -mx-3 text-base font-semibold leading-7 rounded-lg
-                      text-base-content hover:bg-base-300">Simulated IELTS Exam
-                    </a>
-                    <a href="#personalized-study-plan" class="block px-3 py-2
-                      -mx-3 text-base font-semibold leading-7 rounded-lg
-                      text-base-content hover:bg-base-300">Personalized ChatBot Tutor
-                    </a>
-                    <a href="#" class="block px-3
-                      py-2 -mx-3 text-base font-semibold leading-7 rounded-lg
-                      text-base-content hover:bg-base-300">LOG IN
-					</a>
-                  </div>
-                </div>
-              </div>
+			  
+			  <div class="flow-root mt-6">
+				<div class="-my-6 divide-y divide-neutral/10">
+				  <div class="py-6 space-y-2">
+					<a href="#optimized-ielts-performance" class="block px-3 py-2 -mx-3 text-base font-semibold leading-7 rounded-lg text-base-content hover:bg-base-300" onclick="closeMenu()">Simulated IELTS Exam</a>
+					<a href="#personalized-study-plan" class="block px-3 py-2 -mx-3 text-base font-semibold leading-7 rounded-lg text-base-content hover:bg-base-300" onclick="closeMenu()">Personalized ChatBot Tutor</a>
+					<a href="#" class="block px-3 py-2 -mx-3 text-base font-semibold leading-7 rounded-lg text-base-content hover:bg-base-300" onclick="closeMenu()">LOG IN</a>
+				  </div>
+				</div>
+			  </div>
+  
             </div>
           </div>
         </header>
@@ -574,7 +567,12 @@ faqList.addEventListener('click', (e) => {
     }
   }
 });
+</script>
 
+<script>
+function closeMenu() {
+  document.getElementById("menu-mobile").classList.add('hidden');
+}
 </script>
 
       </main>
